@@ -8,6 +8,7 @@ let arr = [
 
 function PrintStudentswithMap() {
   //Write your code here , just console.log
+  console.log("Student print using map successfully");
    arr.map( function (value) {
         var b = Object.keys(value);
         b.map(function (d) {
@@ -18,7 +19,9 @@ function PrintStudentswithMap() {
 }
 
 function PrintStudentsbyForEach() {
+  
   //Write your code here , just console.log
+   console.log("Student print using ForEach successfully");
    arr.forEach((value) => {
         var e = Object.keys(value);
         e.forEach((f) => {
@@ -29,6 +32,7 @@ function PrintStudentsbyForEach() {
 
 function addData() {
   //Write your code here, just console.log
+  console.log(" New Student DATA ADDED  successfully");
   var h =  {id:4,name:"susan",age:"20", 
    marks:45}
    arr.push(h);
@@ -40,6 +44,7 @@ function addData() {
 
 function removeFailedStudent() {
   //Write your code here, just console.log
+    console.log(" Failed student Removed successfully");
   var n = arr.length;
     for (var i=0;i<n;i++){
         if(arr[i].marks<50){
@@ -56,7 +61,7 @@ function concatenateArray() {
         { id: 5, name: "jack", age: "20", marks: 55 },
         { id: 9, name: "karen", age: "19", marks: 58 },
       ];
-   
+     console.log(" Arrays concatinate Successfully");
       var r = arr.concat(o);
             console.log(r); 
 }
